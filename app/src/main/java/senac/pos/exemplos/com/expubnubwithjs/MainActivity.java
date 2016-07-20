@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         final Pubnub pubnub = new Pubnub("pub-c-2e25ef2a-b358-437e-938d-cca47b438d56", "sub-c-6814b2de-4934-11e6-85a4-0619f8945a4f");
 
         try {
-            //
             pubnub.subscribe("my_channel", new Callback() {
                         @Override
                         public void connectCallback(String channel, Object message) {
@@ -68,8 +67,6 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                 });
                             }
-                            //System.out.println("SUBSCRIBE : " + channel + " : "
-                              //      + message.getClass() + " : " + message.toString());
                         }
 
                         @Override
